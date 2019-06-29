@@ -36,7 +36,7 @@ digraph G {
 @graphviz_close
 ```
 
-![Example](https://raw.githubusercontent.com/ColinKinloch/markdown-it-graphviz-exec/master/example.svg)
+![Example](https://raw.githubusercontent.com/ColinKinloch/markdown-it-graphviz-exec/master/example.svg?sanitize=true&raw=true)
 
 Add attributes to the output element with JSON argument
 
