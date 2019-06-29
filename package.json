@@ -1,0 +1,10 @@
+{
+  "name": "markdown-it-graphviz-exec",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "Colin Kinloch <colin@kinlo.ch>",
+  "main": "index.js",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3"
+  }
+}
