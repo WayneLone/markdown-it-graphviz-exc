@@ -12,10 +12,22 @@ module.exports = function markdownItGraphVizExec(md, options = {}) {
     try {
       const { content, info } = tokens[idx]
       const info_obj = JSON.parse(info.length ? info : '{}')
-      const svg = execSync('dot -Tsvg', { input: content })
+      const attrs = info_obj.attrs || {}
+      const cmd = [
+        'dot',
+        'neato',
+        'twopi',
+        'circo',
+        'fdp',
+        'sfdp',
+        'patchwork',
+        'osage',
+      ].includes(info_obj.cmd) ? info_obj.cmd : 'dot'
+      info_obj.cmd = undefined
+      const svg = execSync(`${cmd} -Tsvg`, { input: content })
       const $svg = cheerio.load(svg, { xmlMode: true })('svg')
       
-      for (const [key, value] of Object.entries(info_obj)) {
+      for (const [key, value] of Object.entries(attrs)) {
         $svg.attr(key, value)
       }
       // TODO: Implement block options
