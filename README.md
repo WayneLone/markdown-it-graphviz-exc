@@ -38,6 +38,15 @@ digraph G {
 
 ![Example](./example.svg)
 
+Add attributes to the output element with JSON argument
+
+```
+@graphviz_open { "width": "100%", "style": "border: 2px dashed blue" }
+digraph G {Hello->World}
+@grophviz_close
+```
+
+
 ## Install
 
 ```
