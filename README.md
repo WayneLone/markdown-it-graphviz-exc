@@ -63,7 +63,7 @@ digraph sequenceDiagramExample {
 ## Install
 
 ```
-yarn add markdown-it-graphviz-exec
+yarn add markdown-it-graphviz-exc
 ```
 
 on macOS:
