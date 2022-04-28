@@ -3,9 +3,9 @@ const cheerio = require('cheerio');
 
 module.exports = function markdownItGraphVizExec(md, options = {}) {
   
-  const openMarker = options.openMarker || '@graphviz_open'
+  const openMarker = options.openMarker || '```graphviz'
   const openChar = openMarker.charCodeAt(0)
-  const closeMarker = options.closeMarker || '@graphviz_close'
+  const closeMarker = options.closeMarker || '```'
   const closeChar = closeMarker.charCodeAt(0)
   
   function render(tokens, idx, options, env, slf) {
