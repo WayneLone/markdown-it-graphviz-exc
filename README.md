@@ -38,14 +38,13 @@ digraph G {
 
 Add attributes to the output element with JSON argument
 
-```
-@graphviz_open { "attrs": { "width": "100%", "style": "border: 2px dashed blue" } }
+```graphviz
+{ "attrs": { "width": "100%", "style": "border: 2px dashed blue" } }
 digraph G {Hello->World}
-@grophviz_close
 ```
 
-```
-@graphviz_open { "cmd": "neato" }
+```graphviz
+{ "cmd": "neato" }
 digraph sequenceDiagramExample {
   node [ shape="record" ]
   clientHead [ label="Client" pos="0,1.5!" ];
@@ -58,7 +57,6 @@ digraph sequenceDiagramExample {
   htmlHead -> htmlPoint0 -> htmlFoot [ dir="none" style="dashed" ]
   clientPoint0 -> htmlPoint0 [ label="get" labelloc="c" style="solid" ]
 }
-@graphviz_close
 ```
 
 
