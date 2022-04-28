@@ -4,8 +4,7 @@ Render GraphViz dot language to svg using executables.
 
 Depends on [GraphViz](https://graphviz.org/)
 
-```
-@graphviz_open
+```graphviz
 digraph G {
 
 	subgraph cluster_0 {
@@ -33,7 +32,6 @@ digraph G {
 	start [shape=Mdiamond];
 	end [shape=Msquare];
 }
-@graphviz_close
 ```
 
 ![Example](https://raw.githubusercontent.com/ColinKinloch/markdown-it-graphviz-exec/master/example.svg?sanitize=true&raw=true)
