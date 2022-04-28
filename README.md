@@ -1,4 +1,4 @@
-# markdown-it-graphviz-exec
+# markdown-it-graphviz-exc
 
 Render GraphViz dot language to svg using executables.
 
